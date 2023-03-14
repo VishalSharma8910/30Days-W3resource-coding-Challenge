@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+
+int raduis;
+cin>>raduis;
+double volume;
+cout<<"Calculate the volume of Sphere \n";
+cout<<"--------------------------------\n";
+
+volume = (4*3.14*raduis*raduis*raduis)/3;
+
+cout<<"The volume of Sphere is :"<<volume<<endl;
+   
+
+return 0;
+}
+
+===============================
+Calculate the volume of Sphere 
+--------------------------------
+The volume of Sphere is :904.32
