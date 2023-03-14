@@ -1,0 +1,39 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+
+int a,b,c;
+cin>>a>>b;
+
+cout<<"Swap two numbers : \n";
+cout<<"-------------------------\n";
+cout<<"Input 1st number : "<<a<<endl;
+cout<<"Input 2nd number : "<<b<<endl;
+
+c=a;
+a=b;
+b=c;
+
+
+cout<<"After swapping the 1st number is : "<<a<<endl;
+cout<<"After swapping the 2nd number is : "<<b<<endl;
+   
+
+return 0;
+}
+
+=================================
+Swap two numbers : 
+-------------------------
+Input 1st number : 25
+Input 2nd number : 39
+After swapping the 1st number is : 39
+After swapping the 2nd number is : 25
