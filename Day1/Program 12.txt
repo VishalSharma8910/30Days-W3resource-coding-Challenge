@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+
+int num1,num2,sum;
+cin>>num1>>num2;
+
+sum=num1+num2;
+
+cout<<"Sum of two numbers : \n";
+cout<<"-------------------------\n";
+cout<<"Input 1st number : "<<num1<<endl;
+cout<<"Input 2nd number : "<<num2<<endl;
+cout<<"The sum of the numbers is : "<<sum<<endl;
+   
+
+return 0;
+}
+
+====================================
+Sum of two numbers : 
+-------------------------
+Input 1st number : 25
+Input 2nd number : 39
+The sum of the numbers is : 64
