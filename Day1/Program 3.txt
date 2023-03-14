@@ -1,0 +1,39 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+
+cout<<"Find the size of Fundamental Data Types: \n";
+cout<<"-----------------------------------------\n";
+cout<<"The sizeof(Char) is : "<<sizeof(char)<<" byte"<<endl;
+cout<<"The sizeof(short) is : "<<sizeof(short)<<" byte"<<endl;
+cout<<"The sizeof(long) is : "<<sizeof(long)<<" byte"<<endl;
+cout<<"The sizeof(int) is : "<<sizeof(int)<<" byte"<<endl;
+cout<<"The sizeof(long long) is : "<<sizeof(long long)<<" byte"<<endl;
+cout<<"The sizeof(float) is : "<<sizeof(float)<<" byte"<<endl;
+cout<<"The sizeof(double) is : "<<sizeof(double)<<" byte"<<endl;
+cout<<"The sizeof(long double) is : "<<sizeof(long double)<<" byte"<<endl;
+cout<<"The sizeof(bool) is : "<<sizeof(bool)<<" byte"<<endl;
+
+return 0;
+}
+
+===============================
+Find the size of Fundamental Data Types: 
+-----------------------------------------
+The sizeof(Char) is : 1 byte
+The sizeof(short) is : 2 byte
+The sizeof(long) is : 4 byte
+The sizeof(int) is : 4 byte
+The sizeof(long long) is : 8 byte
+The sizeof(float) is : 4 byte
+The sizeof(double) is : 8 byte
+The sizeof(long double) is : 12 byte
+The sizeof(bool) is : 1 byte
