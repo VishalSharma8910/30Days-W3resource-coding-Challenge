@@ -1,0 +1,50 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+cout<<"Check whether the primitive values crossing the limits or not :\n";
+cout<<"----------------------------------------------------------------\n";
+char gender = 'F'; //char is single quoted
+bool isEmployed = true; //true(1) or false(0)
+unsigned short numOfSons = 2; //[0, 255]
+short yearOfAppt = 2009; //[-32767, 32768]
+unsigned int yearlyPackage = 1500000; //[0, 4294967295]
+double height = 79.48;  // With fractional part
+float gpa = 4.69f; //  // Need suffix 'f' for float
+long totalDrawn = 12047235L;     // Suffix 'L' for long
+long long balance = 995324987LL;  // Need suffix 'LL' for long long int
+
+cout<<"The Gender is : "<<gender<<endl;
+cout<<"Is she Married? : "<<isEmployed<<endl;
+cout<<"Number of sons she has : "<<numOfSons<<endl;
+cout<<"Year of her appointment : "<<yearOfAppt<<endl;
+cout<<"Salary for a year : "<<yearlyPackage<<endl;
+cout<<"Height is : "<<height<<endl;
+cout<<"GPA is : "<<gpa<<endl;
+cout<<"Salary drawn up to : "<<totalDrawn<<endl;
+cout<<"Balance till : "<<balance<<endl;
+
+
+
+return 0;
+}
+
+==============================
+Check whether the primitive values crossing the limits or not :
+----------------------------------------------------------------
+The Gender is : F
+Is she Married? : 1
+Number of sons she has : 2
+Year of her appointment : 2009
+Salary for a year : 1500000
+Height is : 79.48
+GPA is : 4.69
+Salary drawn up to : 12047235
+Balance till : 995324987
