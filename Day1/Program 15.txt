@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+
+int area;
+cin>>area;
+int volume;
+cout<<"Calculate the volume of cube \n";
+cout<<"--------------------------------\n";
+cout<<"Input the side of cube : "<<area<<endl;
+
+volume = area*area*area;
+
+cout<<"The volume of area is : "<<volume<<endl;
+   
+
+return 0;
+}
+
+==========================================
+Calculate the volume of cube 
+--------------------------------
+Input the side of cube : 5
+The volume of area is : 125
