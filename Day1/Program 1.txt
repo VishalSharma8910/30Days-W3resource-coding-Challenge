@@ -1,1 +1,25 @@
-hello world
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+cout<<"Print welcome text in a seperate line"<<endl;
+cout<<"--------------------------------------"<<endl;
+cout<<"welcome To "<<endl;
+cout<<"W3resource.com"<<endl;
+
+return 0;
+}
+
+=============================================
+
+Print welcome text in a seperate line
+--------------------------------------
+welcome To 
+W3resource.com
