@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+int farhenheit,celcius;
+cin>>celcius;
+
+farhenheit = (celcius*1.8)+32;
+
+cout<<"Convert temperature in Celsius to Fahrenheit : \n";
+cout<<"--------------------------------------------------- \n";
+cout<<"Input the temperature in Celsius : "<<celcius<<endl;
+cout<<"The temperature in Celsius : "<<celcius<<endl;
+cout<<"The temperature in Fahrenheit : "<<farhenheit<<endl;  
+   
+
+return 0;
+}
+
+================================
+Convert temperature in Celsius to Fahrenheit : 
+--------------------------------------------------- 
+Input the temperature in Celsius : 35
+The temperature in Celsius : 35
+The temperature in Fahrenheit : 95
