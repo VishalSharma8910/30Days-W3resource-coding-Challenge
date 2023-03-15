@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+float side,side1,ang1,area;
+cin>>side>>side1>>ang1;
+
+area = (side * side1 * sin((3.14/180)*ang1))/2;
+cout<<"Find the area of Scalene Triangle : \n";
+cout<<"---------------------------------------- \n";
+cout<<"Input the length of a side of the triangle : "<<side<<endl;
+cout<<"Input the length of another side of the triangle : "<<side1<<endl;
+cout<<"Input the angle between these sides of the triangle : "<<ang1<<endl;
+cout<<"The area of the Scalene Triangle is : "<<area<<endl;
+
+
+return 0;
+}
+
+================================
+Find the area of Scalene Triangle : 
+---------------------------------------- 
+Input the length of a side of the triangle : 5
+Input the length of another side of the triangle : 6
+Input the angle between these sides of the triangle : 6
+The area of the Scalene Triangle is : 1.56713
