@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+double Celsius,kelvin;
+cin>>Celsius;
+
+kelvin = Celsius + 273.15;
+
+cout<<"Convert temperature in Celsius to Kelvin : \n";
+cout<<"--------------------------------------------------- \n";
+cout<<"Input the temperature in Celsius : "<<Celsius<<endl;
+cout<<"The temperature in Celsius : "<<Celsius<<endl;
+cout<<"The temperature in Kelvin : "<<kelvin<<endl;
+
+
+return 0;
+}
+
+=====================================
+Convert temperature in Celsius to Kelvin : 
+--------------------------------------------------- 
+Input the temperature in Celsius : 26.85
+The temperature in Celsius : 26.85
+The temperature in Kelvin : 300
