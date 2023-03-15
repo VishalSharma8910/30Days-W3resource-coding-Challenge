@@ -1,0 +1,38 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+
+int num1,num2,num3,num4,sum=0;
+cin>>num1>>num2>>num3>>num4;
+
+float avg;
+
+sum=num1+num2+num3+num4;
+avg=(float)sum/4;
+
+cout<<"Compute the total and average of four numbers :\n";
+cout<<"----------------------------------------------------\n";
+cout<<"Input 1st two numbers (separated by space) : "<<num1<<" "<<num2<<endl;
+cout<<"Input last two numbers (separated by space) : "<<num3<<" "<<num4<<endl;
+cout<<"The total of four numbers is : "<<sum<<endl;
+cout<<"The average of four numbers is : "<<avg<<endl;
+
+
+return 0;
+}
+
+=============================
+Compute the total and average of four numbers :
+----------------------------------------------------
+Input 1st two numbers (separated by space) : 25 20
+Input last two numbers (separated by space) : 15 25
+The total of four numbers is : 85
+The average of four numbers is : 21.25
