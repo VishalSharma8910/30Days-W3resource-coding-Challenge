@@ -23,7 +23,7 @@ cout<<"Input the radius(1/2 of diameter) of a circle : "<<radius<<endl;
 cout<<"The area of the circle is : "<<area<<endl;
 cout<<"The circumference of the circle is : "<<circum<<endl;   
    
-
+it 
 return 0;
 }
 
