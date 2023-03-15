@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+int angle1,angle2,angle3;
+cin>>angle1>>angle2;
+
+cout<<"Find the third angle of a triangle : \n";
+cout<<"----------------------------------------- \n";
+cout<<"Input the 1st angle of the triangle : "<<angle1<<endl;
+cout<<"Input the 2nd angle of the triangle : "<<angle2<<endl;
+angle3=180-(angle1+angle2);
+cout<<"The 3rd of the triangle is : "<<angle3<<endl;
+
+
+return 0;
+}
+
+======================================
+Find the third angle of a triangle : 
+----------------------------------------- 
+Input the 1st angle of the triangle : 30
+Input the 2nd angle of the triangle : 60
+The 3rd of the triangle is : 90
