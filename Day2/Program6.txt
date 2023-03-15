@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+int kelvin;
+cin>>kelvin;
+
+double Fahrenheit;
+Fahrenheit = (kelvin - 273.15) * 1.8 + 32;
+cout<<"Convert temperature in Kelvin to Fahrenheit : \n";
+cout<<"--------------------------------------------------- \n";
+cout<<"Input the temperature in Kelvin : "<<kelvin<<endl;
+cout<<"The temperature in Kelvin : "<<kelvin<<endl;
+cout<<"The temperature in Fahrenheit : "<<Fahrenheit<<endl;
+
+
+return 0;
+}
+
+=====================================
+Convert temperature in Kelvin to Fahrenheit : 
+--------------------------------------------------- 
+Input the temperature in Kelvin : 300
+The temperature in Kelvin : 300
+The temperature in Fahrenheit : 80.33
