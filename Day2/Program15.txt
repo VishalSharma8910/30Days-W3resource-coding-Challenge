@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+int num1,num2,quotient;
+cin>>num1>>num2;
+
+quotient=num1/num2;
+
+cout<<"Divide two numbers and print:\n";
+cout<<"----------------------------------\n";
+cout<<"The quotient of "<<num1<<" and "<<num2<<" is : "<<quotient;
+
+
+return 0;
+}
+
+======================================
+Divide two numbers and print:
+----------------------------------
+The quotient of 30 and 10 is : 3
