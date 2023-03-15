@@ -1,0 +1,37 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+int num;
+cin>>num;
+
+string s;
+
+if(num>0){
+   s="positive";
+}else if(num<0){
+   s="negative";
+}else{
+   s="zero";
+}
+cout<<"Check whether a number is positive, negative or zero :\n";
+cout<<"--------------------------------------------------------\n";
+cout<<"Input a number : "<<num<<endl;
+cout<<"The entered number is "<<s<<endl;
+
+
+return 0;
+}
+
+=================================================
+Check whether a number is positive, negative or zero :
+--------------------------------------------------------
+Input a number : 8
+The entered number is positive
