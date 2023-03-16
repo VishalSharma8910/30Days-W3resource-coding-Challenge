@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+
+string name1,name2;
+cin>>name1>>name2;
+
+cout<<"Print the name in reverse where last name comes first: \n";
+cout<<"----------------------------------------------------------- \n";
+cout<<"Input First Name: "<<name1<<endl;
+cout<<"Input Last Name: "<<name2<<endl;
+cout<<"Name in reverse is: "<<name2<<" "<<name1<<endl;
+
+return 0;
+}
+
+=======================================
+Print the name in reverse where last name comes first: 
+----------------------------------------------------------- 
+Input First Name: Alexandra
+Input Last Name: Abramov
+Name in reverse is: Abramov Alexandra
