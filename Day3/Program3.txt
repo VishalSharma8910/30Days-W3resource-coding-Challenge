@@ -1,0 +1,37 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+
+cout << "\n\n Print the following pattern:\n";
+   cout << "--------------------------------\n";
+   cout << " xxxxx\n";
+   cout << "x     x       x        x\n";
+   cout << "x             x        x\n";
+   cout << "x          xxxxxxx  xxxxxxx\n";
+   cout << "x             x        x\n";
+   cout << "x     x       x        x\n";
+   cout << " xxxxx\n";
+
+return 0;
+}
+
+=========================================
+
+
+ Print the following pattern:
+--------------------------------
+ xxxxx
+x     x       x        x
+x             x        x
+x          xxxxxxx  xxxxxxx
+x             x        x
+x     x       x        x
+ xxxxx
