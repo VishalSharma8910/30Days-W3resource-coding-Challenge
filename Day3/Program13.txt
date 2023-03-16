@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+ char sing_ch; 
+   cout << "\n\n Print code (ASCII code / Unicode code etc.) of a  given character:\n";
+   cout << "-----------------------------------------------------------------------\n";
+   cout << " Input a character: ";
+       cin >> sing_ch;  
+   
+  cout <<" The ASCII value of "<<sing_ch<<" is: " <<(int)sing_ch << endl; 
+  cout <<" The character for the ASCII value "<<(int)sing_ch <<" is: "<<(char)((int)sing_ch) << endl<< endl;
+
+
+return 0;
+}
+
+=============================================
+
+
+ Print code (ASCII code / Unicode code etc.) of a  given character:
+-----------------------------------------------------------------------
+ Input a character:  The ASCII value of Z is: 90
+ The character for the ASCII value 90 is: Z
+
