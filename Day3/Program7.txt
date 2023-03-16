@@ -1,0 +1,37 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+
+const double pie = 3.141592;
+int radius;
+cin>>radius;
+
+double area,circumference;
+
+area=pie*radius*radius;
+circumference=2*pie*radius;
+
+cout<<"Find the area and circumference of any circle :\n";
+cout<<"---------------------------------------------------- \n";
+cout<<"Input the radius(1/2 of diameter) of a circle : "<<radius<<endl;
+cout<<"The area of the circle is : "<<area<<endl;
+cout<<"The circumference of the circle is : "<<circumference<<endl;
+
+
+return 0;
+}
+
+================================================
+Find the area and circumference of any circle :
+---------------------------------------------------- 
+Input the radius(1/2 of diameter) of a circle : 5
+The area of the circle is : 78.5398
+The circumference of the circle is : 31.4159
