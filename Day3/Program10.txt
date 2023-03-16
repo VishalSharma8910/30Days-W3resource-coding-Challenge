@@ -1,0 +1,35 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+
+const double pie = 3.14;
+int radius,height;
+cin>>radius>>height;
+
+double volume;
+volume=(pie*radius*radius*height);
+
+cout<<"Calculate the volume of a cylinder : \n";
+cout<<"--------------------------------------- \n";
+cout<<"Input the cone radius  : "<<radius<<endl;
+cout<<"Input cone height : "<<height<<endl;
+cout<<"The volume of the cylinder is: "<<volume<<endl;
+
+
+return 0;
+}
+
+===============================================
+Calculate the volume of a cylinder : 
+--------------------------------------- 
+Input the cone radius  : 4
+Input cone height : 8
+The volume of the cylinder is: 401.92
