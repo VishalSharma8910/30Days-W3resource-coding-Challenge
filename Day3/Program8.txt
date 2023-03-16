@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+
+const double pie = 3.1415;
+int radius;
+cin>>radius;
+
+double volume;
+volume=(4*pie*radius*radius*radius)/3;
+
+cout<<"Calculate the volume of a sphere : \n";
+cout<<"--------------------------------------- \n";
+cout<<"Input the radius of a sphere : "<<radius<<endl;
+cout<<"The volume of a sphere is : "<<volume<<endl;
+
+
+return 0;
+}
+
+==============================
+Calculate the volume of a sphere : 
+--------------------------------------- 
+Input the radius of a sphere : 5
+The volume of a sphere is : 523.583
