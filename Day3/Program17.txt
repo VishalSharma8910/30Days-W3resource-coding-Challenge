@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+float s1,area;
+cin>>s1;
+
+area = sqrt(3)/4*(s1*s1); 
+
+cout<<"Calculate the area of the Equilateral Triangle : \n";
+cout<<"---------------------------------------------------- \n";
+cout<<"Input the value of the side of the equilateral triangle: "<<s1<<endl;
+cout<<"The area of equilateral triangle is: "<<area<<endl;
+
+return 0;
+}
+
+=============================
+Calculate the area of the Equilateral Triangle : 
+---------------------------------------------------- 
+Input the value of the side of the equilateral triangle: 5
+The area of equilateral triangle is: 10.8253
