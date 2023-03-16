@@ -1,0 +1,35 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+ 
+
+ float kmph, miph;
+  cin >> kmph;
+   cout << "\n\n Convert kilometers per hour to miles per hour :\n";
+   cout << "----------------------------------------------------\n"; 
+    cout << " Input the distance in kilometer : "<<kmph<<endl;
+   
+   miph = (kmph * 0.6213712); 
+    cout << " The "<< kmph <<" Km./hr. means "<< miph << " Miles/hr." << endl;
+   cout << endl;
+
+
+return 0;
+}
+
+==========================================
+
+
+ Convert kilometers per hour to miles per hour :
+----------------------------------------------------
+ Input the distance in kilometer : 5
+ The 5 Km./hr. means 3.10686 Miles/hr.
+
