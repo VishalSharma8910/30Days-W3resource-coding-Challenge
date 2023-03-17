@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+int num1,num2,sum=0,count=0,newnum;
+cin>>num1>>num2;
+
+sum=num1+num2;
+newnum=sum;
+
+
+while(newnum!=0){
+   newnum=newnum/10;
+   count++;
+}
+cout<<count<<endl;
+
+
+return 0;
+}
+
+=================================
+Sample input 15 20
+Sample output 2
