@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+   int startnum,endnum,sum=0;
+   cin>>startnum>>endnum;
+
+
+   for(int i=startnum; i<=endnum; i++){
+      sum+=i;
+   }
+cout<<"Add "<<startnum<<" to "<<endnum<<" : "<<sum;
+
+return 0;
+}
+
+============================
+Add 1 to 100 : 5050
