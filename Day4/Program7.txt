@@ -1,0 +1,48 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+int num,firstdig,lastdig,digit,swappednum;
+cin>>num;
+
+lastdig=num%10;//5
+digit=(int)log10(num);//4
+firstdig=num/pow(10,digit);//1
+
+swappednum=lastdig;//5
+swappednum*=(int)round(pow(10,digit));
+swappednum+=num%((int) round(pow(10,digit)));
+swappednum-=lastdig;
+swappednum+=firstdig;
+
+cout<<"Input any number: "<<num<<endl;
+cout<<"The number after swapping the first and last digits are: "<<swappednum<<endl;
+
+
+
+
+
+return 0;
+}
+
+
+// Suppose num = 12345
+// --------------------
+// lastDigit  = 12345 % 10 => 5
+// digits     = log10(12345) => 4
+// firstDigit = 12345 / pow (10, 4) => 12345 / 10000 => 1
+
+// swappedNum = 5 * pow(10, 4) => 5 * 10000 => 50000
+// swappedNum = 50000 + (12345 % 10000) => 50000 + 2345 => 52345
+// swappedNum = 52345 - 5 => 52340
+// swappedNum = 52340 + 1 => 52341
+=======================================================================================
+Input any number: 12345
+The number after swapping the first and last digits are: 52341
