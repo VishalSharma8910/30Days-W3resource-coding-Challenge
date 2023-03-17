@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+float side,length,area;
+cin>>side>>length;
+
+area=(side * (length * length)) / (4.0 * tan((M_PI / side)));
+
+cout<<"Print the area of a hexagon: \n";
+cout<<"--------------------------------- \n";
+cout<<"Input the number of sides of the polygon "<<side<<endl;
+cout<<"Input the length of the polygon "<<length<<endl;
+cout<<"The area of the plygon is: "<<area<<endl;
+
+
+return 0;
+}
+
+===============================================
+Print the area of a hexagon: 
+--------------------------------- 
+Input the number of sides of the polygon 7
+Input the length of the polygon 6
+The area of the plygon is: 130.821
