@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+string test(string str){
+
+string newstr = str.substr(str.length()-1);
+return newstr + str + newstr;
+
+}
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+
+cout<<test("Red")<<endl;
+cout<<test("Green")<<endl;
+cout<<test("1")<<endl;
+
+
+return 0;
+}
+
+==============================
+dRedd
+nGreenn
+111
