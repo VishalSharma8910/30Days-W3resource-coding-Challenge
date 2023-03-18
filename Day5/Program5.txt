@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+int test(int x, int y){
+   if(x==y)
+      return (3*(x+y));
+   else
+      return (x+y);
+}
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+
+cout<<test(1,2)<<endl;
+cout<<test(3,2)<<endl;
+cout<<test(2,2)<<endl;
+
+return 0;
+}
+
+===================================
+3
+5
+12
