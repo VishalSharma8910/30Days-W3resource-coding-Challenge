@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+bool test(string str){
+     return (str.length() < 3 && str=="C#") || (str.substr(0,2)=="C#" && str[2] == ' ');
+
+
+}
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+
+cout<<test("C# Sharp")<<endl;
+cout<<test("C#")<<endl;
+cout<<test("C++")<<endl;
+
+
+
+return 0;
+}
+
+=======================================
+1
+1
+0
