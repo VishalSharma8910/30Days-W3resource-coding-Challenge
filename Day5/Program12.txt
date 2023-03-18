@@ -1,0 +1,38 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+string test(string str){
+
+if(str.length()>1){
+string newstr=str.substr(0,2);
+cout<<newstr<<newstr<<newstr<<newstr<<endl;
+}
+else{
+   cout<<str<<endl;
+}
+
+}
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+
+test("C Sharp");
+test("JS");
+test("a");
+
+
+return 0;
+}
+
+=============================
+C C C C 
+JSJSJSJS
+a
