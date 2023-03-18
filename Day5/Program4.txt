@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+int x,y,digit_sum=0,num;
+cin>>x>>y;
+
+for(int i=x; i<=y; i++){
+    num=i;
+    while(num>0){
+      digit_sum+=num%10;
+      num/=10;
+    }
+}
+
+cout<<"Add up all the digits between "<<x<<" and "<<y<<" is: "<<digit_sum<<endl;
+
+return 0;
+}
+
+=========================================================
+Add up all the digits between 39 and 41 is: 21
