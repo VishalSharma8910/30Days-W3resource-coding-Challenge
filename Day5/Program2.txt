@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+double num[52];
+    int c=0;
+    while(cin>>num[c++]);
+    sort(num, num+c-1);
+    cout << "Difference between the highest number and the lowest number: ";
+    cout<<num[c-2]-num[0]<<endl;
+    
+return 0;
+}
+
+========================================
+Difference between the highest number and the lowest number: 3
