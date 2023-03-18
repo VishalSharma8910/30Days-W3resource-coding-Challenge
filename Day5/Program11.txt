@@ -1,0 +1,40 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+string test(string str){
+   
+char temp;
+int n=str.length();
+
+temp=str[0];//i
+str[0]=str[n-1];//e
+str[n-1]=temp;//e.....i
+
+return str;
+}
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+
+
+cout<<test("abcd")<<endl;
+cout<<test("a")<<endl;
+cout<<test("xy")<<endl;
+
+
+
+return 0;
+}
+
+==================================
+dbca
+a
+yx
