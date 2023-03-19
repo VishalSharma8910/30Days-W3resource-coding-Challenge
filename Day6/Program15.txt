@@ -1,0 +1,38 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+int test(string str){
+          string last_two_char=str.substr(str.length()-2);
+          int count=0;
+          for(int i=0; i<str.length()-2; i++){
+            if(str.substr(i,2)==(last_two_char))
+               count++;
+          }
+          return count;
+}
+
+
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+  cout << test("abcdsab") << endl;  
+  cout << test("abcdabab") << endl;  
+  cout << test("abcabdabab") << endl;  
+  cout << test("abcabd") << endl;
+
+return 0;
+}
+
+======================================
+1
+2
+3
+0
