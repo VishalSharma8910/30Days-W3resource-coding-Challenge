@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+string test(string str){
+     return str.substr(1,2)=="yt" ? str.erase(1,2) : str;
+
+}
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+
+cout<<test("Python")<<endl;
+cout<<test("ytade")<<endl;
+cout<<test("jsues")<<endl;
+
+
+
+
+return 0;
+}
+
+========================================
+Phon
+ytade
+jsues
