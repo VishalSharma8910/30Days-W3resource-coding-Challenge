@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+int test(int x,int y){
+     if((x >= 20 && x <= 50)  && (y >= 20 && y <= 50))
+      return 0;
+   return 1;
+
+}
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+
+cout<<test(20,84)<<endl;
+cout<<test(14,50)<<endl;
+cout<<test(11,45)<<endl;
+cout<<test(25,40)<<endl;//20 50
+
+
+
+return 0;
+}
+
+======================================
+1
+1
+1
+0
