@@ -1,0 +1,38 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+string test(string str){
+             string new_str="";
+            for (int i = 0; i < str.length(); i++)
+            {
+                if(i%2==0) new_str+=str[i];
+            }
+   
+return new_str;
+}
+
+
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+
+cout<<test("Python")<<endl;
+cout<<test("PHP")<<endl;
+cout<<test("JS")<<endl;
+
+
+return 0;
+}
+
+===============================
+Pto
+PP
+J
