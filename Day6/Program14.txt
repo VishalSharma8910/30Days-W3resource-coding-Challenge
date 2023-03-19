@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+string test(string str){
+             string new_str="";
+            for (int i = 0; i < str.length(); i++)
+            {
+                new_str+=str.substr(0,i+1);
+            }
+   
+return new_str;
+}
+
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+
+cout<<test("abcd")<<endl;
+cout<<test("abc")<<endl;
+cout<<test("a")<<endl;
+
+return 0;
+}
+
+=======================
+aababcabcd
+aababc
+a
