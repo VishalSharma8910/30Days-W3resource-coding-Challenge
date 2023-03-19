@@ -1,0 +1,44 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+bool test(int nums[],int n){
+   for(int i=0; i<n; i++){
+      if(nums[i]==1 && nums[i+1]==2 && nums[i+2]==3)
+      return true;
+   }
+   return false;
+}
+
+
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+int n;
+int arr1[]={1,1,2,3,1};
+n=sizeof(arr1)/sizeof(arr1[0]);
+cout<<test(arr1,n)<<endl;
+
+int arr2[]={1,1,2,4,1};
+n=sizeof(arr2)/sizeof(arr2[0]);
+cout<<test(arr2,n)<<endl;
+
+int arr3[]={1,1,2,1,2,3};
+n=sizeof(arr3)/sizeof(arr3[0]);
+cout<<test(arr3,n)<<endl;
+
+
+return 0;
+}
+
+========================
+1
+0
+1
