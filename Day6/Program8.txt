@@ -1,0 +1,44 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+int test(int x,int y){  
+   int x_last_dig,y_last_dig;
+
+x_last_dig=x%10;
+y_last_dig=y%10;
+
+if(x_last_dig==y_last_dig)
+   return 1;
+return 0;
+
+
+}
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+
+cout<<test(123,456)<<endl;
+cout<<test(12,512)<<endl;
+cout<<test(7,87)<<endl;
+cout<<test(12,45)<<endl;
+
+
+
+
+return 0;
+}
+
+============================
+0
+1
+1
+0
+s
