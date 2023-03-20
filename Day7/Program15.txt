@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+bool test(int x,int y,int z)
+        {
+         return abs(x - y) >= 20 || abs(x - z) >= 20 || abs(y - z) >= 20;
+        }
+
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+  cout << test(11, 21, 31) << endl; 
+  cout << test(11, 22, 31) << endl; 
+  cout << test(10, 20, 15) << endl; 
+  
+  
+
+return 0;
+}
+
+================================
+1
+1
+0
