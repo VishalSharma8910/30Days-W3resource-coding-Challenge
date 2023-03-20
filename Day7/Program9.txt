@@ -1,0 +1,34 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+int test(int x, int y)
+        {
+      
+         return (x >= 10 && x <=20) ||  (y >= 10 && y <= 20) ? 18 : x+y;
+
+        }
+
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+  cout << test(3, 7) << endl; 
+  cout << test(10, 11) << endl; 
+   cout << test(10, 20) << endl;
+  cout << test(21, 220) << endl;   
+
+return 0;
+}
+
+=================================
+10
+18
+18
+241
