@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+int test(int x,int y)
+        {
+       return to_string(x + y).length() > to_string(x).length() ? x : x + y;
+        }
+
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+  cout << test(4,5) << endl;  
+  cout << test(7,4) << endl;  
+  cout << test(10, 10) << endl; 
+  
+
+return 0;
+}
+
+=================
+9
+7
+20
