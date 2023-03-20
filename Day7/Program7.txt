@@ -1,0 +1,34 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+bool test(int num)
+        {
+      
+        if(num % 3 == 0 && num % 7 == 0)
+         return false;
+      return true;
+
+        }
+
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+  cout << test(3) << endl; 
+  cout << test(7) << endl; 
+  cout << test(21) << endl;   
+
+return 0;
+}
+
+========================
+1
+1
+0
