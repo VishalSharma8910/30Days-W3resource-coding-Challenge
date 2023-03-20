@@ -1,0 +1,49 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+bool test(int numbers[], int arr_length)
+        {
+            int n=0;
+            for (int i = 0; i < arr_length; i++)
+            {
+                n=numbers[i];
+                if (n==numbers[i+1] && n==numbers[i+2])
+                return true; 
+            }
+            
+         return false;   
+        }
+
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+  // cout << test("Python") << endl; 
+  // cout << test("JavaScript") << endl; 
+  // cout << test("HTML") << endl;
+    
+     int arr_length; 
+  int nums1[] = { 1, 1, 2, 2, 1 };
+  arr_length = sizeof(nums1) / sizeof(nums1[0]);
+  cout << test(nums1, arr_length) << endl; 
+  int nums2[] = { 1, 1, 2, 1, 2, 3 };
+  arr_length = sizeof(nums2) / sizeof(nums2[0]);
+  cout << test(nums2, arr_length) << endl;
+  int nums3[] = { 1, 1, 1, 2, 2, 2, 1 }; 
+  arr_length = sizeof(nums3) / sizeof(nums3[0]);
+  cout << test(nums3, arr_length) << endl;
+
+return 0;
+}
+
+=================================
+0
+0
+1
