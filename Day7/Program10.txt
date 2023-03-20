@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+string test(string str)
+        {
+         int n=str.length();
+         if(str[0]=='F' && str[n-1]=='B') return "FizzBuzz";
+         else if(str[0]=='F') return "Fizz";
+         else if(str[n-1]=='B') return "Buzz";
+         else return str;
+        }
+
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+  cout << test("FB") << endl; 
+  cout << test("Fsafs") << endl; 
+   cout << test("AuzzB") << endl;
+  cout << test("founder") << endl;   
+
+return 0;
+}
+
+========================
+FizzBuzz
+Fizz
+Buzz
+founder
