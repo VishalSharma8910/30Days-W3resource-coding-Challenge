@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+string test(string s1, string s2)
+        {
+
+         return s1.substr(1,s1.length()-1)+s2.substr(1,s2.length()-1);
+
+        }
+
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+  cout << test("Hello", "Hi") << endl;  
+  cout << test("JS", "Python") << endl; 
+
+return 0;
+}
+
+=============================
+elloi
+Sython
