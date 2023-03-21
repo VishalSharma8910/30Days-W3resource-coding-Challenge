@@ -1,0 +1,37 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+int test(int x,int y,int z)
+        {
+         if(x==y && y==z) return 0;
+         if(x==y)return z;
+         if(x==z)return y;
+         if(y==z)return x;
+         return x+y+z;
+        }
+
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+  cout << test(4,5,7) << endl;  
+  cout << test(7,4,12) << endl;  
+  cout << test(10, 10,12) << endl; 
+  cout << test(12, 12,18) << endl; 
+  
+
+return 0;
+}
+
+==========================
+16
+23
+12
+18
