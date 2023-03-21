@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+string test(string str1)
+        {
+
+         return str1.substr(1).substr(0, str1.length() - 2);
+
+        }
+
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+cout << test("Hello") << endl;  
+cout << test("Hi") << endl; 
+cout << test("Python") << endl; 
+  
+
+return 0;
+}
+
+=============================
+ell
+
+ytho
