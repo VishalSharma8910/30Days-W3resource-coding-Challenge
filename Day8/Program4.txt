@@ -1,0 +1,37 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+bool test(int x,int y,int z)
+        {
+         if (x > y && x > z && y > z) return x - y == y - z;
+            if (x > y && x > z && z > y) return x - z == z - y;
+            if (y > x && y > z && x > z) return y - x == x - z;
+            if (y > x && y > z && z > x) return y - z == z - x;
+            if (z > x && z > y && x > y) return z - x == x - y;
+            return z - y == y - x;
+        }
+
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+  cout << test(4,5,6) << endl;  
+  cout << test(7,12,13) << endl;  
+  cout << test(-1,0,1) << endl; 
+  // cout << test(17, 33) << endl; 
+  
+
+return 0;
+}
+
+================================
+1
+0
+1
