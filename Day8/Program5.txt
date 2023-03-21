@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+string test(string str1,string str2)
+        {
+           return str1+str2+str2+str1;
+        }
+
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+  cout << test("Hi", "Hello") << endl;  
+  cout << test("whats", "app") << endl;  
+  // cout << test(-1,0,1) << endl; 
+  // cout << test(17, 33) << endl; 
+  
+
+return 0;
+}
+
+===========================
+HiHelloHelloHi
+whatsappappwhats
