@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+string test(string s1,int n)
+        {
+           
+      return n + 2 <= s1.length() ? s1.substr(n, 2) : s1.substr(0, 2);
+        
+
+        }
+
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+  cout << test("Hello", 1) << endl;  
+  cout << test("Python", 2) << endl; 
+  cout << test("on", 1) << endl; 
+  // cout << test("o", 1) << endl; 
+return 0;
+}
+=======================================
+el
+th
+on
