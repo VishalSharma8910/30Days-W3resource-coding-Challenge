@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+string test(string str1)
+        {
+         string new_str=str1.substr(str1.length()-2);
+          return new_str+new_str+new_str;
+        }
+
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+cout << test("Hello") << endl;  
+  cout << test("Hi") << endl;  
+  
+
+return 0;
+}
+
+=====================
+lololo
+HiHiHi
