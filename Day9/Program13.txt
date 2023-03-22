@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+int test(int nums[])
+{ 
+  return nums[0]+nums[1]+nums[2]+nums[3]+nums[4];
+}
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+  int nums[] = {10, 20, 30, 40, 50};   
+  cout << test(nums) << endl; 
+  int nums1[] = {10, 20, -30, -40, 50};   
+  cout << test(nums1) << endl;
+
+return 0;
+}
+=============================
+150
+10
