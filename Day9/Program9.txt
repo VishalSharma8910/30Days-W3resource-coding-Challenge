@@ -1,0 +1,50 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+string test(string s1)
+{ 
+
+            if (s1.length() == 1 && s1.substr(0, 1) == "a")
+            {
+                s1 = s1.erase(0, 1);
+            }
+
+            if (s1.length() > 1)
+            {
+                if (s1.substr(1, 1) == "a")
+                {
+                    s1 = s1.erase(1, 1);
+                }
+
+                if (s1.substr(0, 1) == "a")
+                {
+                    s1 = s1.erase(0, 1);
+                }
+            }
+
+            return s1;
+
+}
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+  cout << test("abcab") << endl;  
+  cout << test("Python") << endl; 
+  cout << test("aacda") << endl;
+   cout << test("jython") << endl;
+
+return 0;
+}
+===================================
+bcab
+Python
+cda
+jython
