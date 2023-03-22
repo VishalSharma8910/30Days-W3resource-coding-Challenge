@@ -1,0 +1,46 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+bool test(int nums[],int len)
+{ 
+  int first_char=nums[0];
+  int last_char=nums[len-1];
+  if(first_char==10 || last_char==10)
+   return true;
+else
+   return false;
+
+}
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+  int arr_length; 
+  int nums1[] = {10, 20, 40, 50 };  
+  arr_length = sizeof(nums1) / sizeof(nums1[0]);
+  cout << test(nums1, arr_length) << endl; 
+  int nums2[] = {5, 20, 40, 10}; 
+  arr_length = sizeof(nums2) / sizeof(nums2[0]);
+  cout << test(nums2, arr_length) << endl;
+  int nums3[] = {10, 20, 40, 10};   
+  arr_length = sizeof(nums3) / sizeof(nums3[0]);
+  cout << test(nums3, arr_length) << endl;
+  int nums4[] = {12, 24, 35, 55};   
+  arr_length = sizeof(nums4) / sizeof(nums4[0]);
+  cout << test(nums4, arr_length) << endl;
+
+return 0;
+}
+
+======================
+1
+1
+1
+0
