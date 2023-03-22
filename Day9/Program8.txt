@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+string test(string s1)
+{ 
+    if(s1.substr(0,2) == s1.substr(s1.length()-2)){
+      return s1.substr(2,s1.length()-1);
+    }else{
+    return s1;
+ }
+
+}
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+  cout << test("abcab") << endl;  
+  cout << test("Python") << endl; 
+  cout << test("abcabab") << endl;
+
+return 0;
+}
+===========================
+cab
+Python
+cabab
