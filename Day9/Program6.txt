@@ -1,0 +1,40 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+string test(string s1,string s2)
+{ 
+  
+ if (s1.length() < s2.length())
+            {
+                return s1 + s2.substr(s2.length() - s1.length());
+            }
+            else if (s1.length() > s2.length())
+            {
+                return s1.substr(s1.length() - s2.length()) + s2;
+            }
+            else
+            {
+                return s1 + s2;
+            }
+}
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+  cout << test("abc", "abcd") << endl;  
+  cout << test("Python", "Python") << endl; 
+  cout << test("JS", "Python") << endl;
+
+return 0;
+}
+=================================
+abcbcd
+PythonPython
+JSon
