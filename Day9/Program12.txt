@@ -1,0 +1,43 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+bool test(int nums[],int arr_length1,int nums2[],int arr_length2)
+{ 
+  return nums[0]==nums2[0] || nums[arr_length1-1]==nums2[arr_length2-1];
+   
+
+}
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+ int arr_length1, arr_length2;   
+  int nums11[] = {10, 20, 40, 50};  
+  int nums12[] = {10, 20, 40, 50};  
+  arr_length1 = sizeof(nums11) / sizeof(nums11[0]);
+  arr_length2 = sizeof(nums12) / sizeof(nums12[0]);
+  cout << test(nums11, arr_length1, nums12, arr_length2) << endl; 
+  int nums21[] = {10, 20, 40, 50};  
+  int nums22[] = {10, 20, 40, 5};   
+  arr_length1 = sizeof(nums21) / sizeof(nums21[0]);
+  arr_length2 = sizeof(nums22) / sizeof(nums22[0]);
+  cout << test(nums11, arr_length1, nums12, arr_length2) << endl; 
+  int nums31[] = {10, 20, 40, 50};  
+  int nums32[] = {1, 20, 40, 5}; 
+  arr_length1 = sizeof(nums31) / sizeof(nums21[0]);
+  arr_length2 = sizeof(nums32) / sizeof(nums22[0]);
+  cout << test(nums31, arr_length1, nums32, arr_length2) << endl;
+
+return 0;
+}
+======================================
+1
+1
+0
