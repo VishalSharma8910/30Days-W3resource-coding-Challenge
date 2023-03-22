@@ -1,0 +1,38 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+string test(string s1)
+{
+if(s1[0]=='a' && s1[1]=='b' && s1[2]=='c'){
+  return "abc";
+}else if(s1[0]=='x' && s1[1]=='y' && s1[2]=='z'){
+ return "xyz";
+}
+return "";
+        
+}
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+  cout << test("abc") << endl;  
+  cout << test("abcdef") << endl; 
+  cout << test("C") << endl; 
+  cout << test("xyz") << endl;
+  cout << test("xyzsder") << endl; 
+  
+return 0;
+}
+======================================
+abc
+abc
+
+xyz
+xyz
