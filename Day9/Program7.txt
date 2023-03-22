@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+string test(string s1)
+{ 
+  if(s1.length()<2){
+   return s1+s1+s1;
+}else{
+   return s1.substr(0,2)+s1.substr(0,2)+s1.substr(0,2);
+}
+
+}
+
+int main(){
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+ #endif
+
+  cout << test("abc") << endl;  
+  cout << test("Python") << endl; 
+  cout << test("J") << endl;
+
+return 0;
+}
+=====================
+ababab
+PyPyPy
+JJJ
